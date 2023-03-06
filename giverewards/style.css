@@ -1,0 +1,14 @@
+.titlelight{
+    background-color: whitesmoke;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 58px;
+    color: #96BB7C;	
+}
+
+.titledark{font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    color: #184D47;	
+}

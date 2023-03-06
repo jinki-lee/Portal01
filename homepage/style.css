@@ -1,0 +1,81 @@
+
+#title{
+    /*Because of you, the future looks bright*/
+    margin-top: 10px;
+    padding-left:40px;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 54px;
+    line-height: 95%;
+    color: #1E2F4F;
+    
+}
+
+#titlepicture{
+    max-width:100%;
+    max-height:100%;
+    float:left;
+}
+
+.h11{
+    /*Wall of Awesomeness*/
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 54px;
+    line-height: 87px;
+    text-align: center;
+    padding-top: 100px;
+    color: #1E2F4F;
+}
+
+
+/*--------------------------------Animated Bubble*/
+.organic {
+    
+
+    display: block;
+    width: 100%;
+    height: 500px;
+    background: linear-gradient(135deg, whitesmoke, whitesmoke);   
+    border-radius: 0% 0% 41% 59% / 0% 0% 55% 57%;
+    animation-name: organic;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+  
+  @keyframes organic {
+      0% {border-radius: 0% 10% 41% 59% / 0% 0% 55% 57%}
+      33% {border-radius: 0% 0% 30% 70% / 0% 0% 70% 68%;}
+      66% {border-radius: 0% 0% 70% 30% / 0% 0% 30% 32%;}
+      100% {border-radius: 0% 0% 41% 59% / 0% 0% 55% 57%}
+  }
+
+/*--------------------------------Tiles*/
+
+#rowtiles{
+    margin-left:7%;
+    margin-right:7%;
+    margin-top:10px;
+}
+
+  .tiles{background-color: whitesmoke;
+    margin: 5px -5px;
+        width:auto;
+    height:auto;
+    padding:40px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.45);
+border-radius: 5px;
+            }
+
+.box{
+    background-color: whitesmoke;
+    margin: 5px -5px;
+        width:auto;
+    height:auto;
+    padding:40px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.45);
+border-radius: 5px;
+            }
+

@@ -1,0 +1,542 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>View Rewards</title>
+    <!-- CSS Files -->
+    <link href="/mainstyle.css" rel="stylesheet" type="text/css">
+
+    <link href="/viewrewards/rewardstest.css" rel="stylesheet" type="text/css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top"> <!--Start of Nav-->
+        <a class="navbar-brand" href="/landingpage/index.html"><span class="titlelight">IT</span> <span class="titledark"> Rewards &amp; Recognition</span></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav mr-auto">
+            <!-- <ul class="nav nav-pills"> -->
+                <li class="nav-item">
+                  <a class="nav-link " aria-current="page" href="/homepage/index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="/transaction/index.html">Transactions</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="/viewrewards/index.html">View Rewards 🌟</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="/giverewards/index.html">Give Rewards</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Account Settings
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="/settings/index.html">User Profile</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="/adminsettings/index.html">Admin Settings</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="/viewcart/index.html">View Cart</a>
+                </li>
+              </ul>
+              <span class="navbar-text">
+                Your Balance: <div class="counter" data-target="1000">0</div>
+            </span>
+        </div>
+      </nav>  <!-- End of Nav -->
+      
+<br>
+
+
+<div class="filter">
+  <button class="btn btn-default" type="button" data-toggle="collapse" data-target="#mobile-filter" aria-expanded="false" aria-controls="mobile-filter">Filters<span class="fa fa-filter pl-1"></span></button>
+</div>
+
+<section id="sidebar">
+  <div>
+      <h6 class="p-1 border-bottom">Points</h6>
+      <ul>
+          <li><a href="#">50-100 Points</a></li>
+          <li><a href="#">100-500 Points</a></li>
+          <li><a href="#">500-1000</a></li>
+          <li><a href="#">1000-3000</a></li>
+          <li><a href="#">3000-5000</a></li>
+          <li><a href="#">>5000</a></li>
+      </ul>
+  </div>
+  <div>
+      <h6 class="p-1 border-bottom">Filter By</h6>
+      <p class="mb-2">Type</p>
+      <ul>
+          <li><a href="#">Gift Cards</a></li>
+          <li><a href="#">Food</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Items</a></li>
+          <li><a href="#">Bookings & Reservations</a></li>
+          <li><a href="#">ENMAX Place</a></li>
+      </ul>
+  </div>
+  <div>
+      <h6>Availability</h6>
+      <form class="ml-md-2">
+          <div class="form-inline border rounded p-sm-2 my-2">
+              <input type="radio" name="type" id="boring">
+              <label for="boring" class="pl-1 pt-sm-0 pt-1">Instant</label>
+          </div>
+          <div class="form-inline border rounded p-sm-2 my-2">
+              <input type="radio" name="type" id="ugly">
+              <label for="ugly" class="pl-1 pt-sm-0 pt-1">Reservation Needed</label>
+          </div>
+          <div class="form-inline border rounded p-md-2 p-sm-1">
+              <input type="radio" name="type" id="notugly">
+              <label for="notugly" class="pl-1 pt-sm-0 pt-1">Requires More Information</label>
+          </div>
+      </form>
+  </div>
+</section>
+
+
+<section id="products">
+<div class="container">
+  <div class="row">
+      <div class="col-lg-3 col-sm-4 col-11 offset-sm-0 offset-1">
+          <div class="card">
+              <img class="card-img-top" src="/assets/amazon.jpg" alt="Card image cap">
+              <div class="card-body">
+                <p class="card-text">Amazon</p>
+                <p>$xxx</p>
+                <span class="fa fa-circle" id="red"></span>        
+                <span class="fa fa-circle" id="teal"></span>        
+                <span class="fa fa-circle" id="blue"></span>        
+              </div>
+            </div>
+      </div>
+      <div class="col-lg-3 offset-lg-0 col-sm-4 offset-sm-2 col-11 offset-1">
+          <div class="card">
+              <img class="card-img-top" src="/assets/visa.JPG" alt="Card image cap">
+              <div class="card-body">
+                <p class="card-text">Prepaid Visa</p>
+                <p>$xxx</p>
+                <span class="fa fa-circle" id="red"></span>        
+                <span class="fa fa-circle" id="teal"></span>        
+                <span class="fa fa-circle" id="blue"></span>        
+              </div>
+            </div>
+      </div>
+      <div class="col-lg-3 col-sm-4 col-11 offset-sm-0 offset-1">
+          <div class="card">
+              <img class="card-img-top" src="/assets/mercantino.png" alt="Card image cap">
+              <div class="card-body">
+                <p class="card-text">Mercantino</p>
+                <p>$xxx</p>
+                <span class="fa fa-circle" id="red"></span>        
+                <span class="fa fa-circle" id="teal"></span>        
+                <span class="fa fa-circle" id="blue"></span>        
+              </div>
+            </div>
+      </div>
+      <div class="col-lg-3 col-sm-4 offset-lg-0 offset-sm-2 col-11 offset-1">
+          <div class="card">
+              <img class="card-img-top" src="/assets/cineplex.JPG" alt="Card image cap">
+              <div class="card-body">
+                <p class="card-text">Cineplex</p>
+                <p>$xxx</p>
+                <span class="fa fa-circle" id="red"></span>        
+                <span class="fa fa-circle" id="teal"></span>        
+                <span class="fa fa-circle" id="blue"></span>        
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="row mt-3">
+      <div class="col-lg-3 col-sm-4 col-11 offset-sm-0 offset-1">
+          <div class="card">
+              <img class="card-img-top" src="/assets/flames.png" alt="Card image cap">
+              <div class="card-body">
+                <p class="card-text">Flames</p>
+                <p>$xxx</p>
+                <span class="fa fa-circle" id="red"></span>        
+                <span class="fa fa-circle" id="teal"></span>        
+                <span class="fa fa-circle" id="blue"></span>        
+              </div>
+            </div>
+      </div>
+      <div class="col-lg-3 col-sm-4 offset-lg-0 offset-sm-2 col-11 offset-1">
+          <div class="card">
+              <img class="card-img-top" src="/assets/heritage.png" alt="Card image cap">
+              <div class="card-body">
+                <p class="card-text">Modern Dining Table</p>
+                <p>$xxx</p>
+                <span class="fa fa-circle" id="red"></span>        
+                <span class="fa fa-circle" id="teal"></span>        
+                <span class="fa fa-circle" id="blue"></span>        
+              </div>
+            </div>
+      </div>
+      <div class="col-lg-3 col-sm-4 col-11 offset-sm-0 offset-1">
+          <div class="card">
+              <img class="card-img-top" src="/assets/stampede.jpg" alt="Card image cap">
+              <div class="card-body">
+                <p class="card-text">Calgary Stampede</p>
+                <p>$xxx</p>
+                <span class="fa fa-circle" id="red"></span>        
+                <span class="fa fa-circle" id="teal"></span>        
+                <span class="fa fa-circle" id="blue"></span>        
+              </div>
+            </div>
+      </div>
+      <div class="col-lg-3 col-sm-4 offset-lg-0 offset-sm-2 col-11 offset-1">
+          <div class="card">
+              <img class="card-img-top" src="/assets/zoo.png" alt="Card image cap">
+              <div class="card-body">
+                <p class="card-text">Calgary Zoo</p>
+                <p>$xxx</p>
+                <span class="fa fa-circle" id="red"></span>        
+                <span class="fa fa-circle" id="teal"></span>        
+                <span class="fa fa-circle" id="blue"></span>        
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div class="row mt-3">
+    <div class="col-lg-3 col-sm-4 col-11 offset-sm-0 offset-1">
+        <div class="card">
+            <img class="card-img-top" src="/assets/yeti.jpg" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text">ENMAX Swag</p>
+              <p>$xxx</p>
+              <span class="fa fa-circle" id="red"></span>        
+              <span class="fa fa-circle" id="teal"></span>        
+              <span class="fa fa-circle" id="blue"></span>        
+            </div>
+          </div>
+    </div>
+    <div class="col-lg-3 col-sm-4 col-11 offset-sm-0 offset-1">
+      <div class="card">
+          <img class="card-img-top" src="/assets/waterbottle.jpg" alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text">ENMAX Swag</p>
+            <p>$xxx</p>
+            <span class="fa fa-circle" id="red"></span>        
+            <span class="fa fa-circle" id="teal"></span>        
+            <span class="fa fa-circle" id="blue"></span>        
+          </div>
+        </div>
+  </div>
+  <div class="col-lg-3 col-sm-4 col-11 offset-sm-0 offset-1">
+    <div class="card">
+        <img class="card-img-top" src="/assets/hardhat.jpg" alt="Card image cap">
+        <div class="card-body">
+          <p class="card-text">ENMAX Swag</p>
+          <p>$xxx</p>
+          <span class="fa fa-circle" id="red"></span>        
+          <span class="fa fa-circle" id="teal"></span>        
+          <span class="fa fa-circle" id="blue"></span>        
+        </div>
+      </div>
+</div>
+<div class="col-lg-3 col-sm-4 col-11 offset-sm-0 offset-1">
+  <div class="card">
+      <img class="card-img-top" src="/assets/ENX_Logo_RED.png" alt="Card image cap">
+      <div class="card-body">
+        <p class="card-text">ENMAX Swag</p>
+        <p>$xxx</p>
+        <span class="fa fa-circle" id="red"></span>        
+        <span class="fa fa-circle" id="teal"></span>        
+        <span class="fa fa-circle" id="blue"></span>        
+      </div>
+    </div>
+</div>
+</div>
+
+<div class="row mt-3">
+  <div class="col-lg-3 col-sm-4 col-11 offset-sm-0 offset-1">
+      <div class="card">
+          <img class="card-img-top" src="/assets/flowers.JPG" alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text">Flower Bouquet</p>
+            <p>$xxx</p>
+            <span class="fa fa-circle" id="red"></span>        
+            <span class="fa fa-circle" id="teal"></span>        
+            <span class="fa fa-circle" id="blue"></span>        
+          </div>
+        </div>
+  </div>
+  <div class="col-lg-3 col-sm-4 col-11 offset-sm-0 offset-1">
+    <div class="card">
+        <img class="card-img-top" src="/assets/cake.jpg" alt="Card image cap">
+        <div class="card-body">
+          <p class="card-text">Local Stores</p>
+          <p>$xxx</p>
+          <span class="fa fa-circle" id="red"></span>        
+          <span class="fa fa-circle" id="teal"></span>        
+          <span class="fa fa-circle" id="blue"></span>        
+        </div>
+      </div>
+</div>
+<div class="col-lg-3 col-sm-4 col-11 offset-sm-0 offset-1">
+  <div class="card">
+      <img class="card-img-top" src="/assets/sunshine.jpg" alt="Card image cap">
+      <div class="card-body">
+        <p class="card-text">Ski Pass</p>
+        <p>$xxx</p>
+        <span class="fa fa-circle" id="red"></span>        
+        <span class="fa fa-circle" id="teal"></span>        
+        <span class="fa fa-circle" id="blue"></span>        
+      </div>
+    </div>
+</div>
+
+<div class="col-lg-3 col-sm-4 col-11 offset-sm-0 offset-1">
+<div class="card">
+    <img class="card-img-top" src="/assets/lakelouise.png" alt="Card image cap">
+    <div class="card-body">
+      <p class="card-text">Ski Pass</p>
+      <p>$xxx</p>
+      <span class="fa fa-circle" id="red"></span>        
+      <span class="fa fa-circle" id="teal"></span>        
+      <span class="fa fa-circle" id="blue"></span>        
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="row mt-3">
+  <div class="col-lg-3 col-sm-4 col-11 offset-sm-0 offset-1">
+      <div class="card">
+          <img class="card-img-top" src="/assets/nordicspa.webp" alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text">Kanaskis Nordic Spa</p>
+            <p>$xxx</p>
+            <span class="fa fa-circle" id="red"></span>        
+            <span class="fa fa-circle" id="teal"></span>        
+            <span class="fa fa-circle" id="blue"></span>        
+          </div>
+        </div>
+  </div>
+  <div class="col-lg-3 col-sm-4 col-11 offset-sm-0 offset-1">
+    <div class="card">
+        <img class="card-img-top" src="/assets/banff.jpg" alt="Card image cap">
+        <div class="card-body">
+          <p class="card-text">Banff Pass</p>
+          <p>$xxx</p>
+          <span class="fa fa-circle" id="red"></span>        
+          <span class="fa fa-circle" id="teal"></span>        
+          <span class="fa fa-circle" id="blue"></span>        
+        </div>
+      </div>
+</div>
+<div class="col-lg-3 col-sm-4 col-11 offset-sm-0 offset-1">
+  <div class="card">
+      <img class="card-img-top" src="/assets/marriott.png" alt="Card image cap">
+      <div class="card-body">
+        <p class="card-text">Overnight Hotel Stay</p>
+        <p>$xxx</p>
+        <span class="fa fa-circle" id="red"></span>        
+        <span class="fa fa-circle" id="teal"></span>        
+        <span class="fa fa-circle" id="blue"></span>        
+      </div>
+    </div>
+</div>
+
+<div class="col-lg-3 col-sm-4 col-11 offset-sm-0 offset-1">
+<div class="card">
+    <img class="card-img-top" src="/assets/parking.jpg" alt="Card image cap">
+    <div class="card-body">
+      <p class="card-text">Reserved Parking Spot</p>
+      <p>$xxx</p>
+      <span class="fa fa-circle" id="red"></span>        
+      <span class="fa fa-circle" id="teal"></span>        
+      <span class="fa fa-circle" id="blue"></span>        
+    </div>
+  </div>
+</div>
+</div>
+
+
+<div class="row mt-3">
+  <div class="col-lg-3 col-sm-4 col-11 offset-sm-0 offset-1">
+      <div class="card">
+          <img class="card-img-top" src="/assets/family.jpg" alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text">ENMAX.com Photo Content</p>
+            <p>$xxx</p>
+            <span class="fa fa-circle" id="red"></span>        
+            <span class="fa fa-circle" id="teal"></span>        
+            <span class="fa fa-circle" id="blue"></span>        
+          </div>
+        </div>
+  </div>
+  <div class="col-lg-3 col-sm-4 col-11 offset-sm-0 offset-1">
+    <div class="card">
+        <img class="card-img-top" src="/assets/jinki.PNG" alt="Card image cap">
+        <div class="card-body">
+          <p class="card-text">Headshot Photo @ ENMAX Place</p>
+          <p>$xxx</p>
+          <span class="fa fa-circle" id="red"></span>        
+          <span class="fa fa-circle" id="teal"></span>        
+          <span class="fa fa-circle" id="blue"></span>        
+        </div>
+      </div>
+</div>
+<div class="col-lg-3 col-sm-4 col-11 offset-sm-0 offset-1">
+  <div class="card">
+      <img class="card-img-top" src="/assets/teamlunch.JPG" alt="Card image cap">
+      <div class="card-body">
+        <p class="card-text">Team Lunch</p>
+        <p>$xxx</p>
+        <span class="fa fa-circle" id="red"></span>        
+        <span class="fa fa-circle" id="teal"></span>        
+        <span class="fa fa-circle" id="blue"></span>        
+      </div>
+    </div>
+</div>
+
+<div class="col-lg-3 col-sm-4 col-11 offset-sm-0 offset-1">
+<div class="card">
+    <img class="card-img-top" src="/assets/ford.jpg" alt="Card image cap">
+    <div class="card-body">
+      <p class="card-text">Rent Fleet Vehicle?</p>
+      <p>$xxx</p>
+      <span class="fa fa-circle" id="red"></span>        
+      <span class="fa fa-circle" id="teal"></span>        
+      <span class="fa fa-circle" id="blue"></span>        
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+<div class="row mt-3">
+  <div class="col-lg-3 col-sm-4 col-11 offset-sm-0 offset-1">
+      <div class="card">
+          <img class="card-img-top" src="/assets/golf.jpg" alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text">Golfing</p>
+            <p>$xxx</p>
+            <span class="fa fa-circle" id="red"></span>        
+            <span class="fa fa-circle" id="teal"></span>        
+            <span class="fa fa-circle" id="blue"></span>        
+          </div>
+        </div>
+  </div>
+  <div class="col-lg-3 col-sm-4 col-11 offset-sm-0 offset-1">
+    <div class="card">
+        <img class="card-img-top" src="/assets/dinner.jpg" alt="Card image cap">
+        <div class="card-body">
+          <p class="card-text">Dinner</p>
+          <p>$xxx</p>
+          <span class="fa fa-circle" id="red"></span>        
+          <span class="fa fa-circle" id="teal"></span>        
+          <span class="fa fa-circle" id="blue"></span>        
+        </div>
+      </div>
+</div>
+<div class="col-lg-3 col-sm-4 col-11 offset-sm-0 offset-1">
+  <div class="card">
+      <img class="card-img-top" src="/assets/drinks.jpg" alt="Card image cap">
+      <div class="card-body">
+        <p class="card-text">Cocktail bar</p>
+        <p>$xxx</p>
+        <span class="fa fa-circle" id="red"></span>        
+        <span class="fa fa-circle" id="teal"></span>        
+        <span class="fa fa-circle" id="blue"></span>        
+      </div>
+    </div>
+</div>
+
+<div class="col-lg-3 col-sm-4 col-11 offset-sm-0 offset-1">
+<div class="card">
+    <img class="card-img-top" src="/assets/spa.jpg" alt="Card image cap">
+    <div class="card-body">
+      <p class="card-text">Spa</p>
+      <p>$xxx</p>
+      <span class="fa fa-circle" id="red"></span>        
+      <span class="fa fa-circle" id="teal"></span>        
+      <span class="fa fa-circle" id="blue"></span>        
+    </div>
+  </div>
+</div>
+</div>
+
+
+<div class="row mt-3">
+  <div class="col-lg-3 col-sm-4 col-11 offset-sm-0 offset-1">
+      <div class="card">
+          <img class="card-img-top" src="/assets/coffee.jpg" alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text">Coffe with Jinki</p>
+            <p>$xxx</p>
+            <span class="fa fa-circle" id="red"></span>        
+            <span class="fa fa-circle" id="teal"></span>        
+            <span class="fa fa-circle" id="blue"></span>        
+          </div>
+        </div>
+  </div>
+  <div class="col-lg-3 col-sm-4 col-11 offset-sm-0 offset-1">
+    <div class="card">
+        <img class="card-img-top" src="/assets/day-off.jpg" alt="Card image cap">
+        <div class="card-body">
+          <p class="card-text">Day Off</p>
+          <p>$xxx</p>
+          <span class="fa fa-circle" id="red"></span>        
+          <span class="fa fa-circle" id="teal"></span>        
+          <span class="fa fa-circle" id="blue"></span>        
+        </div>
+      </div>
+</div>
+<div class="col-lg-3 col-sm-4 col-11 offset-sm-0 offset-1">
+  <div class="card">
+      <img class="card-img-top" src="/assets/charity.jpg" alt="Card image cap">
+      <div class="card-body">
+        <p class="card-text">Donate to Charity</p>
+        <p>$xxx</p>
+        <span class="fa fa-circle" id="red"></span>        
+        <span class="fa fa-circle" id="teal"></span>        
+        <span class="fa fa-circle" id="blue"></span>        
+      </div>
+    </div>
+</div>
+
+<div class="col-lg-3 col-sm-4 col-11 offset-sm-0 offset-1">
+<div class="card">
+    <img class="card-img-top" src="/assets/dyson.JPG" alt="Card image cap">
+    <div class="card-body">
+      <p class="card-text">Other Items</p>
+      <p>$xxx</p>
+      <span class="fa fa-circle" id="red"></span>        
+      <span class="fa fa-circle" id="teal"></span>        
+      <span class="fa fa-circle" id="blue"></span>        
+    </div>
+  </div>
+</div>
+</div>
+
+</div>
+</section>
+
+    <!-- Scripts -->
+    <script src="/mainscript.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

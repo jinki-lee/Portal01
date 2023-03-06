@@ -1,0 +1,31 @@
+.container{
+    background-color: #8b3f59;
+}
+
+
+
+body{
+    color: white !important;
+    font-family: 'Libre Caslon Text', serif !important;
+}
+
+
+#logo{
+    align-items: center;
+}
+
+#customersTable{
+    color: rgb(248, 211, 211) !important;
+}
+
+/*----------------------------------------------------------- ADD ITEMS */
+
+.checkboxes ul, .checkboxes li {
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+.checkboxes li {
+    display:inline-block;
+    width:33.3333%;
+}

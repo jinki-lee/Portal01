@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>View Cart</title>
+    <!-- CSS Files -->
+    <link href="/viewcart/style.css" rel="stylesheet" type="text/css">
+    <link href="/mainstyle.css" rel="stylesheet" type="text/css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top"> <!--Start of Nav-->
+        <a class="navbar-brand" href="/landingpage/index.html"><span class="titlelight">IT</span> <span class="titledark"> Rewards &amp; Recognition</span></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav mr-auto">
+            <!-- <ul class="nav nav-pills"> -->
+                <li class="nav-item">
+                  <a class="nav-link " aria-current="page" href="/homepage/index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="/transaction/index.html">Transactions</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/viewrewards/index.html">View Rewards</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="/giverewards/index.html">Give Rewards</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Account Settings
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="/settings/index.html">User Profile</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="/adminsettings/index.html">Admin Settings</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="/viewcart/index.html">View Cart &#128722;</a>
+                </li>
+              </ul>
+              <span class="navbar-text">
+                Your Balance: <div class="counter" data-target="1000">0</div>
+            </span>
+        </div>
+      </nav>  <!-- End of Nav -->
+      
+      <section class="h-100 h-custom" style="background-color: #96BB7C;">
+        <div class="container py-5 h-100">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-12">
+              <div class="card card-registration card-registration-2" style="border-radius: 15px;">
+                <div class="card-body p-0">
+                  <div class="row g-0">
+                    <div class="col-lg-8">
+                      <div class="p-5">
+                        <div class="d-flex justify-content-between align-items-center mb-5">
+                          <h1 class="fw-bold mb-0 text-black">Shopping Cart</h1>
+                          <h6 class="mb-0 text-muted">3 items</h6>
+                        </div>
+                        <hr class="my-4">
+      
+                        <div class="row mb-4 d-flex justify-content-between align-items-center">
+                          <div class="col-md-2 col-lg-2 col-xl-2">
+                            <img
+                              src="/assets/flames.png"
+                              class="img-fluid rounded-3" alt="Cotton T-shirt">
+                          </div>
+                          <div class="col-md-3 col-lg-3 col-xl-3">
+                            <h6 class="text-muted">Tickets</h6>
+                            <h6 class="text-black mb-0">Flames Ticket</h6>
+                          </div>
+                          <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
+                            <button class="btn btn-link px-2"
+                              onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                              <i class="fas fa-minus"></i>
+                            </button>
+      
+                            <input id="form1" min="0" name="quantity" value="1" type="number"
+                              class="form-control form-control-sm" />
+      
+                            <button class="btn btn-link px-2"
+                              onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                              <i class="fas fa-plus"></i>
+                            </button>
+                          </div>
+                          <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
+                            <h6 class="mb-0">50 EP</h6>
+                          </div>
+                          <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                            <a href="#!" class="text-muted"><i class="fas fa-times"></i></a>
+                          </div>
+                        </div>
+      
+                        <hr class="my-4">
+      
+                        <div class="row mb-4 d-flex justify-content-between align-items-center">
+                          <div class="col-md-2 col-lg-2 col-xl-2">
+                            <img
+                              src="/assets/yeti.jpg"
+                              class="img-fluid rounded-3" alt="Cotton T-shirt">
+                          </div>
+                          <div class="col-md-3 col-lg-3 col-xl-3">
+                            <h6 class="text-muted">ENMAX Swag</h6>
+                            <h6 class="text-black mb-0">Yeti Cup</h6>
+                          </div>
+                          <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
+                            <button class="btn btn-link px-2"
+                              onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                              <i class="fas fa-minus"></i>
+                            </button>
+      
+                            <input id="form1" min="0" name="quantity" value="1" type="number"
+                              class="form-control form-control-sm" />
+      
+                            <button class="btn btn-link px-2"
+                              onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                              <i class="fas fa-plus"></i>
+                            </button>
+                          </div>
+                          <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
+                            <h6 class="mb-0">100 EP</h6>
+                          </div>
+                          <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                            <a href="#!" class="text-muted"><i class="fas fa-times"></i></a>
+                          </div>
+                        </div>
+      
+                        <hr class="my-4">
+      
+                        <div class="row mb-4 d-flex justify-content-between align-items-center">
+                          <div class="col-md-2 col-lg-2 col-xl-2">
+                            <img
+                              src="/assets/dinner.jpg"
+                              class="img-fluid rounded-3" alt="Cotton T-shirt">
+                          </div>
+                          <div class="col-md-3 col-lg-3 col-xl-3">
+                            <h6 class="text-muted">Reservation</h6>
+                            <h6 class="text-black mb-0">Major Tom for 2</h6>
+                          </div>
+                          <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
+                            <button class="btn btn-link px-2"
+                              onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                              <i class="fas fa-minus"></i>
+                            </button>
+      
+                            <input id="form1" min="0" name="quantity" value="1" type="number"
+                              class="form-control form-control-sm" />
+      
+                            <button class="btn btn-link px-2"
+                              onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                              <i class="fas fa-plus"></i>
+                            </button>
+                          </div>
+                          <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
+                            <h6 class="mb-0">7000 EP</h6>
+                          </div>
+                          <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                            <a href="#!" class="text-muted"><i class="fas fa-times"></i></a>
+                          </div>
+                        </div>
+      
+                        <hr class="my-4">
+      
+                        <div class="pt-5">
+                          <h6 class="mb-0"><a href="/viewrewards/index.html" class="text-body"><i
+                                class="fas fa-long-arrow-alt-left me-2"></i>Back to shop</a></h6>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 bg-grey">
+                      <div class="p-5">
+                        <h3 class="fw-bold mb-5 mt-2 pt-1">Summary</h3>
+                        <hr class="my-4">
+      
+                        <div class="mb-4">
+                          <h5 class="text-uppercase">Current Balance: 10,000 EP</h5>
+                          <h5 class="text-uppercase">Cost: 10,000 EP</h5>
+                        </div>
+      
+                        <h5 class="text-uppercase mb-3"><u>Shipping</u></h5>
+      
+                        <div class="mb-4 pb-2">
+                          <label for="date">Date for delivery / reservation</label>
+                          <input id="date" class="form-control" type="datetime-local" required>
+                        </div>
+      
+                        <h5 class="mb-4"><u>Work Desk</u></h5>
+      
+                        <div class="mb-5">
+                          <div class="form-outline">
+                            <input type="text" id="form3Examplea2" class="form-control form-control-lg" placeholder="EP 1340.A">
+                            <label class="form-label" for="form3Examplea2">Enter your desk location</label>
+                          </div>
+                        </div>
+
+                        <h5 class="mb-4"><u>Email</u></h5>
+                        <div class="mb-5">
+                          <div class="form-outline">
+                            <input type="text" id="form3Examplea2" class="form-control form-control-lg" placeholder="user@domain.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                            <label class="form-label" for="form3Examplea2">Enter the email you want to receive gifts</label>
+                          </div>
+                        </div>
+      
+                        <hr class="my-4">
+      
+                        <div class="d-flex justify-content-between mb-5">
+                          <h5 class="text-uppercase">New Balance</h5>
+                          <h5>850 EP</h5>
+                        </div>
+
+                      <a type="button" class="btn btn-primary" style="float: right; background-color: #C64756; border-color: #C64756;" href="">Check Out</a>
+
+                      <br>
+                      <br>
+
+                      <div class="alert alert-success alert-dismissable">
+                        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                                Success! Your items have been purchased.
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </div>
+            </div>
+            </div>
+            </section>
+
+            
+<div class="container"> <!--Footer Container-->
+  <footer class="py-5">
+    <div class="row">
+      <div class="col-6 col-md-2 mb-3">
+        <h5>ENMAX Corporation</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="https://www.enmax.com/home" class="nav-link p-0 text-muted">ENMAX.com</a></li>
+          <li class="nav-item mb-2"><a href="https://intramax.enmax.com/" class="nav-link p-0 text-muted">Intramax</a></li>
+          <li class="nav-item mb-2"><a href="https://enmax.service-now.com/myenmax?spa=1&page-e1dd1b311b9b145050814157dc4bcb1a=1&active-e1dd1b311b9b145050814157dc4bcb1a=true&inactive-e1dd1b311b9b145050814157dc4bcb1a=false&search-e1dd1b311b9b145050814157dc4bcb1a=&activetab-e1dd1b311b9b145050814157dc4bcb1a=" class="nav-link p-0 text-muted">IT Service Portal</a></li>
+          <li class="nav-item mb-2"><a href="https://wd3.myworkday.com/enmax/d/home.htmld" class="nav-link p-0 text-muted">Workday</a></li>
+        </ul>
+      </div>
+  
+      <div class="col-6 col-md-2 mb-3">
+        <h5>Digital Experience Team (DeX)</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="https://enmax.service-now.com/myenmax?spa=1&page-e1dd1b311b9b145050814157dc4bcb1a=1&active-e1dd1b311b9b145050814157dc4bcb1a=true&inactive-e1dd1b311b9b145050814157dc4bcb1a=false&search-e1dd1b311b9b145050814157dc4bcb1a=&activetab-e1dd1b311b9b145050814157dc4bcb1a=" class="nav-link p-0 text-muted">DeX Request Form</a></li>
+          <li class="nav-item mb-2"><a href="/homepage/feedback.html" class="nav-link p-0 text-muted">Give Us Feedback</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About Us</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Meet the Team</a></li>
+        </ul>
+      </div>
+  
+      <div class="col-6 col-md-2 mb-3">
+        <h5>IT Recognition Portal</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="/homepage/index.html" class="nav-link p-0 text-muted">Home</a></li>
+          <li class="nav-item mb-2"><a href="/transaction/index.html" class="nav-link p-0 text-muted">Transactions</a></li>
+          <li class="nav-item mb-2"><a href="/viewrewards/index.html" class="nav-link p-0 text-muted">View Rewards</a></li>
+          <li class="nav-item mb-2"><a href="/giverewards/index.html" class="nav-link p-0 text-muted">Give Rewards</a></li>
+          <li class="nav-item mb-2"><a href="/settings/index.html" class="nav-link p-0 text-muted">Account Setttings</a></li>
+          <li class="nav-item mb-2"><a href="/viewcart/index.html" class="nav-link p-0 text-muted">View Cart</a></li>
+        </ul>
+      </div>
+  
+  
+  
+  
+  
+      <div class="col-md-5 offset-md-1 mb-3">
+        <form>
+          <h5>Need to request work for the Digital Experience (DeX) Team?</h5>
+          <p>Use the <a href="https://enmax.service-now.com/myenmax?id=sc_cat_item&sys_id=297a7eb3879f15543bb3fe28cebb354b" target="_blank">DeX Request Form</a> to submit any requests to the DeX Team.</p>
+          <p>To help you make the most of the DeX form, we have created a step-by-step guide on how it works. Click the link below!</p>
+          <a href="assets/Dex Form Requests.pdf" target="_blank">DeX Form - How to Guide</a>
+        </form>
+      </div>
+    </div>
+  
+    <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+      <p>ENMAX: Internal Use Only</p>
+      <ul class="list-unstyled d-flex">
+        <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+        <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+        <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+      </ul>
+    </div>
+  </footer>
+  </div> <!--End of Container-->
+
+    <!-- Scripts -->
+    <script src="/mainscript.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Transactions</title>
+        <!-- CSS Files -->
+        <link href="/mainstyle.css" rel="stylesheet" type="text/css">
+        <link href="/transaction/style.css" rel="stylesheet" type="text/css">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    
+    </head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top"> <!--Start of Nav-->
+        <a class="navbar-brand" href="/landingpage/index.html"><span class="titlelight">IT</span> <span class="titledark"> Rewards &amp; Recognition</span></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav mr-auto">
+            <!-- <ul class="nav nav-pills"> -->
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="/homepage/index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="/transaction/index.html">Transactions 💰</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/viewrewards/index.html">View Rewards</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="/giverewards/index.html">Give Rewards</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Account Settings
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="/settings/index.html">User Profile</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="/adminsettings/index.html">Admin Settings</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/viewcart/index.html">View Cart</a>
+                </li>
+              </ul>
+              <span class="navbar-text">
+                Your Balance: <div class="counter" data-target="1000">0</div>
+            </span>
+        </div>
+      </nav>  <!-- End of Nav -->
+      
+      <div class="history-container">
+        <div class="header">
+          <h2>Transaction History: jilee</h2>
+        </div>
+        <div>
+          <div class="balances">
+            <div class="account-balance">
+              <span class="label" style="font-size: larger;">Current Point Balance</span>
+              <span class="dots"></span>
+              <span class="amount" style="font-size: larger;">1000 EP</span>
+            </div>
+            <div class="account-balance">
+              <span class="label" style="font-size: larger;">Give Point Balance</span>
+              <span class="dots"></span>
+              <span class="amount" style="font-size: larger;">1000 GP</span>
+            </div>
+          </div>
+
+          <br>
+
+      <form name="myform" id="myform">
+
+        <div class="row">
+          <div class="col-xl-3">
+            <div class="form-group">
+
+          <h4>Enter the amount of ENMAX Points you would like to convert to Give Points</h4> 
+         <input type="number" id="inputNumber" class="form-control">
+        <button type="button" id="convertBtn" class="btn btn-primary" style="float: right; background-color: #C64756; border-color: #C64756;">Convert</button> 
+        <br>  
+        <h4>Amount of Give Points:</h4>
+          <span id="result"></span>
+      </div>
+    </div>
+  </div>
+         <br> 
+
+            
+        </form>
+
+
+
+          <div class="transactions">
+            <h3>Recently Purchased</h3>
+            <table>
+              <!--
+              <thead>
+                <tr>
+                  <th>Date</th>
+                  <th>Description</th>
+                  <th>Amount</th>
+                </tr>
+              </thead>
+              -->
+              <tbody>
+                <tr class="transaction-row">
+                  <td class="transaction-date">09/30/2018</td>
+                  <td>Flames Game Ticket</td>
+                  <td class="transaction-amount">50 EP</td>
+                </tr>
+                <tr class="transaction-row">
+                  <td class="transaction-date">09/25/2018</td>
+                  <td>Major Tom Dinner Reservation for 2</td>
+                  <td class="transaction-amount">7000 EP</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="transactions">
+            <h3>Recently Gifted To</h3>
+            <table>
+              <!--
+              <thead>
+                <tr>
+                  <th>Date</th>
+                  <th>Description</th>
+                  <th>Amount</th>
+                </tr>
+              </thead>
+              -->
+              <tbody>
+                <tr class="transaction-row">
+                  <td class="transaction-date">09/30/2018</td>
+                  <td>mfreer</td>
+                  <td class="transaction-amount" style="color: red;">-1000 GP</td>
+                </tr>
+                
+                <tr class="transaction-row">
+                  <td class="transaction-date">09/25/2018</td>
+                  <td>nrelke</td>
+                  <td class="transaction-amount" style="color: red;">-1000 GP</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="transactions">
+            <h3>Recently Received By</h3>
+            <table>
+              <!--
+              <thead>
+                <tr>
+                  <th>Date</th>
+                  <th>Description</th>
+                  <th>Amount</th>
+                </tr>
+              </thead>
+              -->
+              <tbody>
+                <tr class="transaction-row">
+                  <td class="transaction-date">09/25/2018</td>
+                  <td>sjayawee</td>
+                  <td class="transaction-amount" style="color: green;">+1000 EP</td>
+                </tr>
+                <tr class="transaction-row">
+                  <td class="transaction-date">09/25/2018</td>
+                  <td>whupp</td>
+                  <td class="transaction-amount" style="color: green;">+1000 EP</td>
+
+                </tr>
+                <tr class="transaction-row">
+                  <td class="transaction-date">09/25/2018</td>
+                  <td>rsa</td>
+                  <td class="transaction-amount" style="color: green;">+1000 EP</td>
+                </tr>
+
+                <tr class="transaction-row">
+                  <td class="transaction-date">09/25/2018</td>
+                  <td>ENMAX - HR</td>
+                  <td class="transaction-amount" style="color: green;">+1000 EP</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      
+<div class="container"> <!--Footer Container-->
+  <footer class="py-5">
+    <div class="row">
+      <div class="col-6 col-md-2 mb-3">
+        <h5>ENMAX Corporation</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="https://www.enmax.com/home" class="nav-link p-0 text-muted">ENMAX.com</a></li>
+          <li class="nav-item mb-2"><a href="https://intramax.enmax.com/" class="nav-link p-0 text-muted">Intramax</a></li>
+          <li class="nav-item mb-2"><a href="https://enmax.service-now.com/myenmax?spa=1&page-e1dd1b311b9b145050814157dc4bcb1a=1&active-e1dd1b311b9b145050814157dc4bcb1a=true&inactive-e1dd1b311b9b145050814157dc4bcb1a=false&search-e1dd1b311b9b145050814157dc4bcb1a=&activetab-e1dd1b311b9b145050814157dc4bcb1a=" class="nav-link p-0 text-muted">IT Service Portal</a></li>
+          <li class="nav-item mb-2"><a href="https://wd3.myworkday.com/enmax/d/home.htmld" class="nav-link p-0 text-muted">Workday</a></li>
+        </ul>
+      </div>
+  
+      <div class="col-6 col-md-2 mb-3">
+        <h5>Digital Experience Team (DeX)</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="https://enmax.service-now.com/myenmax?spa=1&page-e1dd1b311b9b145050814157dc4bcb1a=1&active-e1dd1b311b9b145050814157dc4bcb1a=true&inactive-e1dd1b311b9b145050814157dc4bcb1a=false&search-e1dd1b311b9b145050814157dc4bcb1a=&activetab-e1dd1b311b9b145050814157dc4bcb1a=" class="nav-link p-0 text-muted">DeX Request Form</a></li>
+          <li class="nav-item mb-2"><a href="/homepage/feedback.html" class="nav-link p-0 text-muted">Give Us Feedback</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About Us</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Meet the Team</a></li>
+        </ul>
+      </div>
+  
+      <div class="col-6 col-md-2 mb-3">
+        <h5>IT Recognition Portal</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="/homepage/index.html" class="nav-link p-0 text-muted">Home</a></li>
+          <li class="nav-item mb-2"><a href="/transaction/index.html" class="nav-link p-0 text-muted">Transactions</a></li>
+          <li class="nav-item mb-2"><a href="/viewrewards/index.html" class="nav-link p-0 text-muted">View Rewards</a></li>
+          <li class="nav-item mb-2"><a href="/giverewards/index.html" class="nav-link p-0 text-muted">Give Rewards</a></li>
+          <li class="nav-item mb-2"><a href="/settings/index.html" class="nav-link p-0 text-muted">Account Setttings</a></li>
+          <li class="nav-item mb-2"><a href="/viewcart/index.html" class="nav-link p-0 text-muted">View Cart</a></li>
+        </ul>
+      </div>
+  
+  
+  
+  
+  
+      <div class="col-md-5 offset-md-1 mb-3">
+        <form>
+          <h5>Need to request work for the Digital Experience (DeX) Team?</h5>
+          <p>Use the <a href="https://enmax.service-now.com/myenmax?id=sc_cat_item&sys_id=297a7eb3879f15543bb3fe28cebb354b" target="_blank">DeX Request Form</a> to submit any requests to the DeX Team.</p>
+          <p>To help you make the most of the DeX form, we have created a step-by-step guide on how it works. Click the link below!</p>
+          <a href="assets/Dex Form Requests.pdf" target="_blank">DeX Form - How to Guide</a>
+        </form>
+      </div>
+    </div>
+  
+    <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+      <p>ENMAX: Internal Use Only</p>
+      <ul class="list-unstyled d-flex">
+        <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+        <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+        <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+      </ul>
+    </div>
+  </footer>
+  </div> <!--End of Container-->
+    
+    <!-- Scripts -->
+    <script src="/transaction/script.js"></script>
+    <script src="/mainscript.js"></script>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
